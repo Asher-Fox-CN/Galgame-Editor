@@ -33,7 +33,7 @@ export const TimelinePanel: React.FC<Props> = ({ selectedNode }) => {
       const containerRect = container.getBoundingClientRect();
       const nodeRect = targetNode.getBoundingClientRect();
 
-      // Calculate scroll position to center the node
+      // Calculate scroll position to center the node (ai修的 计算滚动位置)
       const scrollLeft =
         nodeRect.left -
         containerRect.left +
